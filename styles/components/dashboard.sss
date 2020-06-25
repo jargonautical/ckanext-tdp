@@ -1,0 +1,83 @@
+.homepage
+  .stats ul li
+    width: auto
+    min-width: 25%
+    margin-right: 4px
+    text-align: center
+
+  .box
+    border-radius: 0
+    box-shadow: none
+    background: none
+    border: none
+
+  .module
+    border: none
+    background: none
+
+    .module-content
+      background: none
+
+    .tags
+
+      background: none !important
+      background-color: transparent
+      color: white
+      padding-top: 0
+      margin-top: -10px
+
+    &.module-search
+      max-width: 600px
+      margin: 8em auto
+      .heading
+        color: $fontColor
+
+
+  .module-search
+    span, .tag
+      color: black
+      background: none
+    .module-content
+      background: none
+    .search-form
+      padding: 0
+
+    .search-giant
+      margin-bottom: 0
+      input
+        border: none
+        font-size: 1.8em
+    > div
+      background: $lightGrey
+      padding: 0 1em
+
+  .site-stats
+    max-width: 960px
+    margin: 0 auto
+    padding-bottom: 2em
+    .span4
+      margin: 0
+
+span.title
+  font-weight: 700
+  margin-bottom: 5px
+  display: block
+  font-size: 1em
+
+.module-content.box .module-container
+  height: 233px
+  overflow: hidden
+  position: relative
+  &:after
+    content: ''
+    left: 0
+    right: 0
+    bottom: 0
+    height: 1em
+    position: absolute
+    background: white
+
+.module-content.box p
+  font-family: 'IBM Plex Serif', serif
+  position: relative
+  margin-bottom: 0

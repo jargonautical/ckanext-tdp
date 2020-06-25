@@ -1,0 +1,83 @@
+/* Style overwrites for various buttons and links */
+.btn
+  background: none
+  background-image: none
+  border: 1px solid $fontColor
+  color: $fontColor
+  text-shadow: none
+  box-shadow: none
+  font-weight: normal
+  border-radius: 2px
+  transition: background .2s, border .2s
+  &:hover
+    color: $fontColor
+    // Why doesnt this work?
+    background: $lightGrey
+  &.btn-primary
+    text-shadow: none
+    background: $primaryColor
+    border-color: $primaryColor
+    color: white
+    &:hover
+      background: $primaryColourDarker
+      border-color: $primaryColourDarker
+
+.pill,
+.tag,
+a.tag
+  border: none
+  box-shadow: none
+  background: $primaryColor
+  color: white
+  border-radius: $defaultRadius
+  padding-right: 1em
+  transition: opacity .3s
+  position: relative
+  padding: 1px 3px
+  &:hover
+    opacity: 0.7
+    border: none
+    box-shadow: none
+    background: $primaryColor
+  > .remove > i
+    font-size: 1.3em
+    line-height: 1.7
+
+.dropdown.btn-group
+  &.open .btn.btn-primary.dropdown-toggle
+    background: $primaryColourLighter
+
+  .dropdown-menu
+    border: 0px solid #cecece
+    border-radius: 0
+    > li > a:hover,
+    > li > a:focus
+      @mixin removeBackground
+      background: $lightGrey
+      color: $fontColor
+
+.well
+  background: $lighterGrey
+  border-radius: 0
+  border: none
+  box-shadow: none
+
+.badge
+  background: $primaryColor
+  color: white
+  font-weight: bold
+  transition: background .3s
+  position: relative
+  height: 20px
+  width: 20px
+  border-radius: 3em
+  line-height: 17px
+  padding-left: 7px
+  box-sizing: border-box
+  box-shadow: none
+
+.search-form .search-input.search-giant button
+  margin-top: -12px
+
+.dataset-cta
+  // call to action on the dashboard
