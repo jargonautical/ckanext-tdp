@@ -1,0 +1,27 @@
+{
+  "name": "tdp-css-processer",
+  "version": "1.0.0",
+  "description": "For converting Post-CSS to CSS for The Data Place CKAN Site",
+  "scripts": {
+    "watch": "postcss styles/clients/default/main.sss -p sugarss -o ckanext/tdp/public/default.css -m -w",
+    "build": "npm run build:minified && npm run build:unminified",
+    "build:minified": "postcss styles/clients/default/main.sss -p sugarss -o ckanext/tdp/public/default.min.css -m false -e 'minify'",
+    "build:unminified": "postcss styles/clients/default/main.sss -p sugarss -o ckanext/tdp/public/default.css -m false",
+    "lint": "stylelint 'styles/**/*.sss' --config .stylelintrc.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "cssnano": "^3.10.0",
+    "postcss-cli": "^4.1.1",
+    "postcss-extend": "^1.0.5",
+    "postcss-import": "^11.0.0",
+    "postcss-mixins": "^6.2.0",
+    "postcss-nested": "^3.0.0",
+    "postcss-simple-vars": "^4.1.0",
+    "stylelint": "^8.4.0",
+    "stylelint-config-recommended": "^2.0.1",
+    "sugarss": "^1.0.1"
+  }
+}

@@ -1,0 +1,4 @@
+include README.rst
+include LICENSE
+include requirements.txt
+recursive-include ckanext/tdp *.html *.json *.js *.less *.css *.mo
